@@ -118,6 +118,8 @@ void printWord(char filePath[]){
     
 }
 
+//刪除特定位置資料函數尚未練習
+
 void main(){
     printf("%d\n",getDataMaxPosition("./data.txt"));
     printWord("./data.txt");
