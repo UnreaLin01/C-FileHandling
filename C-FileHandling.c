@@ -11,6 +11,7 @@ int getDataMaxPosition(char filePath[]){
     if(file != NULL){
         fseek(file, 0, SEEK_END);
         //ftell()可取得目前偏移的位置
+        //透過fseek()與ftell()可找到資料可偏移之最大值
         maxPosition = ftell(file);
         fclose(file);
         return maxPosition;
